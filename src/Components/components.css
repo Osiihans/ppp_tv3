@@ -1,0 +1,66 @@
+.nav-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: sticky;
+    top: 0;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.side-high-light{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(119, 119, 119, 0.5);
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    z-index: 1;
+    margin: 10px; /* Add some margin if shadows are being clipped */
+}
+
+.profile-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-down{
+    margin-left: auto;
+}
+
+.profile-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.nav-pages, .nav-pages2 ,.nav-pages3{
+    flex: 1; /* Each section takes equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distribute space around items */
+    padding: 10px;
+}
+
+.nav-pages , .nav-pages2{
+    border-bottom: 1px solid #666666;
+}

@@ -1,0 +1,95 @@
+.mainView {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.sideHighLight:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.sideHighLight:last-of-type {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.sideHighLight {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.midSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    overflow-y: hidden;
+}
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    padding: 8px;
+}
+
+/* Tablet layout - Hide side highlights */
+@media screen and (max-width: 992px) {
+    .mainView {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .sideHighLight {
+        display: none; /* Hide both side highlights */
+    }
+
+    .midSection {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .mainView__footer {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}
+
+/* Mobile layout - Same as tablet (side highlights already hidden) */
+@media screen and (max-width: 768px) {
+    .mainView {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .midSection {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .mainView__footer {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .midSection,
+    .mainView__footer {
+        padding: 12px;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+     .midSection{
+         height: calc(100vh - 50px);
+     }
+}
