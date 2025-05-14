@@ -82,14 +82,4 @@
         grid-row: 3 / 4;
     }
 
-    .midSection,
-    .mainView__footer {
-        padding: 12px;
-    }
-}
-
-@media  screen and (max-width: 480px) {
-     .midSection{
-         height: calc(100vh - 50px);
-     }
 }
