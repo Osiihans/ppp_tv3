@@ -44,7 +44,7 @@
 }
 
 /* Tablet layout - Hide side highlights */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     .mainView {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;

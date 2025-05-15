@@ -66,6 +66,34 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .mobile-bottom-bar {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff; /* or whatever color you prefer */
+        z-index: 1000;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+
+    .tab-icons {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .mb-column {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .mb-column.active i {
+        color: #007bff; /* active color */
+    }
+}
+
 .tab{
     display: flex;
     width: 100%;
@@ -315,7 +343,6 @@
 }
 .story-img2 {
     width: 40%;
-    height: 100%;
 }
 .story-img2 img{
     width: 100%;
