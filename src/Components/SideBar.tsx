@@ -1,6 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBookBookmark, faBullhorn, faChevronDown, faHistory, faHome, faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
 import {faShop} from "@fortawesome/free-solid-svg-icons/faShop";
+import {Link, NavLink} from "react-router";
 
 
 export const SideBar = () => {
@@ -16,44 +17,69 @@ export const SideBar = () => {
             <div className="nav-container">
                 <div className="nav-pages">
                     <div className="nav-pages-items">
-                        <FontAwesomeIcon icon={faHome}/> Home
+                        <NavLink to="/">
+                            <FontAwesomeIcon icon={faHome}/> Home
+                        </NavLink>
                     </div>
                     <div className="nav-pages-items">
-                        <FontAwesomeIcon icon={faBookBookmark}/>  Saved
+                        <NavLink to="/saved">
+                            <FontAwesomeIcon icon={faBookBookmark}/>  Saved
+                        </NavLink>
                     </div>
                     <div className="nav-pages-items">
-                        <FontAwesomeIcon icon={faHistory}/> Read History
+                        <NavLink to="/history">
+                            <FontAwesomeIcon icon={faHistory}/> Read History
+                        </NavLink>
                     </div>
                 </div>
                 <div className="nav-pages2">
                     <div className="nav-pages-items2">
-                        <FontAwesomeIcon icon={faBullhorn}/> Advertisement
+                        <NavLink to="/advertisement">
+                            <FontAwesomeIcon icon={faBullhorn}/> Advertisement
+                        </NavLink>
                     </div>
                     <div className="nav-pages-items2">
-                        <FontAwesomeIcon icon={faShop}/> Shop
+                        <NavLink to="/shop">
+                            <FontAwesomeIcon icon={faShop}/> Shop
+                        </NavLink>
                     </div>
                     <div className="nav-pages-items2">
-                        <FontAwesomeIcon icon={faPeopleGroup}/>   Communities
+                        <NavLink to="/community">
+                            <FontAwesomeIcon icon={faPeopleGroup}/>   Communities
+                        </NavLink>
                     </div>
                 </div>
                 <div className="nav-pages3">
                     <div className="nav-pages-items3">
-                        <i className="fab fa-youtube"></i>  YouTube
+                        <Link to="/">
+                            <i className="fab fa-youtube"></i>  YouTube
+                        </Link>
                     </div>
                     <div className="nav-pages-items3">
-                      <i className="fab fa-tiktok"></i> TikTok
+                        <Link to="">
+                            <i className="fab fa-tiktok"></i> TikTok
+                        </Link>
                     </div>
                     <div className="nav-pages-items3">
-                       <i className="fab fa-instagram"></i>   Instagram
+                        <Link to="">
+                            <i className="fab fa-instagram"></i>   Instagram
+                        </Link>
+
                     </div>
                     <div className="nav-pages-items3">
-                        <i className="fab fa-twitter"></i>  Twitter
+                        <Link to="">
+                            <i className="fab fa-twitter"></i>  Twitter
+                        </Link>
                     </div>
                     <div className="nav-pages-items3">
-                        <i className="fab fa-facebook"></i>  Facebook
+                        <Link to="">
+                            <i className="fab fa-facebook"></i>  Facebook
+                        </Link>
                     </div>
                     <div className="nav-pages-items3">
-                        <i className="fa fa-tools"></i>  Settings
+                        <Link to="">
+                            <i className="fa fa-tools"></i>  Settings
+                        </Link>
                     </div>
                 </div>
             </div>

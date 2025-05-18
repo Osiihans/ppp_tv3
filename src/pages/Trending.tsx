@@ -1,8 +1,11 @@
+// import {TopItems} from "../Components/UI/TopItems.tsx";
+import {TopItemsBelow} from "../Components/UI/TopItemsBelow.tsx";
 
 export const Trending = () => {
     return (
         <>
-        <h1>Trending</h1>
+            {/*<TopItems/>*/}
+            <TopItemsBelow/>
         </>
     )
 }

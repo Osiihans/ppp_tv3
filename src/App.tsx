@@ -7,6 +7,7 @@ import MainView from "./home/MainView.tsx";
 
 function App() {
 
+
   return (
     <>
       <MainView/>

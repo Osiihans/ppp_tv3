@@ -1,12 +1,10 @@
-import {TopItems} from "./TopItems.tsx";
-import {TopItemsBelow} from "./TopItemsBelow.tsx";
+import {Outlet} from "react-router";
 
 
 export const SubContent = () => {
     return (
         <div className="sub-content">
-            <TopItems/>
-            <TopItemsBelow/>
+            <Outlet/>
         </div>
     )
 }

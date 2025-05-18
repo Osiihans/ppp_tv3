@@ -1,7 +1,11 @@
+import {TopItems} from "../Components/UI/TopItems.tsx";
+import {TopItemsBelow} from "../Components/UI/TopItemsBelow.tsx";
+
 export const Following = () => {
     return (
         <>
-        <h1>Following</h1>
+            <TopItems/>
+            <TopItemsBelow/>
         </>
     )
 }

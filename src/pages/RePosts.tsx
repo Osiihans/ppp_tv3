@@ -1,9 +1,12 @@
+import {TopItems} from "../Components/UI/TopItems.tsx";
+import {TopItemsBelow} from "../Components/UI/TopItemsBelow.tsx";
 
 
 export const RePosts = () => {
     return (
         <>
-        <h1>PostsList</h1>
+            <TopItems/>
+            <TopItemsBelow/>
         </>
     )
 }

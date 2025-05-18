@@ -14,6 +14,12 @@
   box-sizing: border-box;
 }
 
+a{
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: none !important;
+}
 body {
   color: #333;
   background-color: #f9f9f9;

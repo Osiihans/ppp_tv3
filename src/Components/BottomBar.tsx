@@ -1,22 +1,35 @@
+import {Link} from "react-router";
 
 export const BottomBar = () => {
     return (
         <div className="mobile-bottom-bar">
             <div className="tab-icons">
                 <div className="mb-column active">
-                    <i className="fa fa-home"></i>
+                    <Link to="/">
+                        <i className="fa fa-home"></i>
+                    </Link>
                 </div>
                 <div className="mb-column">
-                   <i className="fa fa-search"></i>
+                    <Link to="search">
+                        <i className="fa fa-search"></i>
+                    </Link>
                 </div>
                 <div className="mb-column">
-                    <i className="fa fa-envelope"></i>
+                    <Link to="messages">
+                        <i className="fa fa-envelope"></i>
+                    </Link>
                 </div>
                 <div className="mb-column">
-                    <i className="fa fa-list"></i>
+                    <Link to="categories">
+                        <i className="fa fa-list"></i>
+                    </Link>
+
                 </div>
                 <div className="mb-column">
-                    <i className="fa fa-tools"></i>
+                    <Link to="settings">
+                        <i className="fa fa-tools"></i>
+                    </Link>
+
                 </div>
             </div>
         </div>

@@ -1,8 +1,11 @@
+import {TopItems} from "../Components/UI/TopItems.tsx";
+import {TopItemsBelow} from "../Components/UI/TopItemsBelow.tsx";
 
 export const Communities = () => {
     return (
         <>
-        <h1>Communities</h1>
+            <TopItems/>
+            <TopItemsBelow/>
         </>
     )
 }

@@ -1,12 +1,20 @@
+import {Link} from "react-router";
 
 
 export  const TopBar = () => {
     return (
         <div className="top-bar">
           <div className="tab">
-              <div className="column active">For You</div>
-              <div className="column">Trending</div>
-              <div className="column">Following</div>
+              <Link to="/">
+                  <div className="column active">For You</div>
+              </Link>
+              <Link to="/trending">
+                  <div className="column">Trending</div>
+              </Link>
+              <Link to="/following">
+                  <div className="column">Following</div>
+              </Link>
+
           </div>
         </div>
     )

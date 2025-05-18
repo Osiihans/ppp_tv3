@@ -3,6 +3,7 @@ import {UserRecommend} from "./UI/UserRecommend.tsx";
 import {CardShort} from "./UI/CardShort.tsx";
 
 
+
 export  const SideHighLight = () => {
     return (
         <div className="side-bar-right">
@@ -10,6 +11,9 @@ export  const SideHighLight = () => {
                 <div className="page-curated">
                     <h3 className="head-start">Curated Picks</h3>
                     <div className="card-curated-container">
+                        {/*<Link to="/categories">*/}
+                        {/*    <h5 style={{borderBottomStyle:"ridge"}}>View all curated picks</h5>*/}
+                        {/*</Link>*/}
                         <CardShort/>
                         <CardShort/>
                         <CardShort/>
@@ -25,6 +29,9 @@ export  const SideHighLight = () => {
                         <CategoryTags/>
                         <CategoryTags/>
                         <CategoryTags/>
+                        {/*<Link to="/categories">*/}
+                        {/*    <h5 style={{borderBottomStyle:"ridge"}}>View all categories</h5>*/}
+                        {/*</Link>*/}
                     </div>
 
                 </div>
