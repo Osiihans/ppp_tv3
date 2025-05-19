@@ -27,8 +27,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "trending",
-                Component: Trending
-
+                Component: Trending,
             },
             {
                 path: "following",
@@ -54,6 +53,10 @@ export const router = createBrowserRouter([
             {
                 path:"shop",
                 Component:Shops
+            },
+            {
+                path:":anyPath/single",
+                Component:SinglePost,
             },
             {
                 path:"single",
