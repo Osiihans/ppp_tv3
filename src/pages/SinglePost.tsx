@@ -1,4 +1,5 @@
 import {Comments} from "../Components/UI/Comments.tsx";
+import {NavLink} from "react-router";
 
 
 export const SinglePost = () => {
@@ -9,10 +10,13 @@ export const SinglePost = () => {
             </div>
             <div className="view-post-content">
                 <h1>Title</h1>
-                <div className="view-post-author">
-                    <img src="https://picsum.photos/200/300" alt=""/>
-                    <h3>Author</h3>
-                </div>
+                <NavLink to="author">
+                    <div className="view-post-author">
+                        <img src="https://picsum.photos/200/300" alt=""/>
+                        <h3>Author</h3>
+                    </div>
+                </NavLink>
+
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>

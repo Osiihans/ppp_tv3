@@ -1,11 +1,9 @@
-import {TopItems} from "../Components/UI/TopItems.tsx";
-import {TopItemsBelow} from "../Components/UI/TopItemsBelow.tsx";
+
 
 export const SavedReads = () => {
     return (
         <>
-            <TopItems/>
-            <TopItemsBelow/>
+            <h1>SavedReads</h1>
         </>
     )
 }

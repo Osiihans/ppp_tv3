@@ -10,11 +10,19 @@ import {ReadHistory} from "./pages/ReadHistory.tsx";
 import {SavedReads} from "./pages/SavedReads.tsx";
 import {Shops} from "./pages/shop/Shops.tsx";
 import {SinglePost} from "./pages/SinglePost.tsx";
+import {AuthorPage} from "./pages/AuthorPage.tsx";
+import {AllAuthors} from "./pages/AllAuthors.tsx";
+import {ResetPage} from "./Autheticate/ResetPage.tsx";
 
 export const router = createBrowserRouter([
     {
         path: "/auth",
         Component: Login
+    },
+
+    {
+        path: "/auth/reset",
+        Component: ResetPage
     },
     {
         path: "/",
@@ -42,12 +50,12 @@ export const router = createBrowserRouter([
                 Component: Advertisement
             },
             {
-                path: "history/",
+                path: "history",
                 Component: ReadHistory,
 
             },
             {
-                path: "saved/",
+                path: "saved",
                 Component: SavedReads,
             },
             {
@@ -61,7 +69,24 @@ export const router = createBrowserRouter([
             {
                 path:"single",
                 Component:SinglePost,
-            }
+            },
+            {
+                path:"author",
+                Component:AuthorPage,
+            },
+            {
+                path:":anyPath/author",
+                Component:AuthorPage,
+            },
+            {
+              path:"authors",
+              Component:AllAuthors,
+            },
+            {
+                path:":anyPath/authors",
+                Component:AllAuthors,
+            },
+
         ]
     },
 

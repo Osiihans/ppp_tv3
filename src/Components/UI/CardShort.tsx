@@ -1,16 +1,19 @@
-
+import {Link} from "react-router";
 
 
 export const CardShort = () => {
     return (
         <div className="card-curated">
-            <div className="author-curated">
-                <img src="https://picsum.photos/200/300" alt=""/>
-                <h3 className="author-name">Hans</h3>
-                <h3 className="category2">Tech</h3>
-            </div>
+            <Link to="author">
+                <div className="author-curated">
+                    <img src="https://picsum.photos/200/300" alt=""/>
+                    <h3 className="author-name">Hans</h3>
+                    <h3 className="category2">Tech</h3>
+                </div>
+            </Link>
             <div className="story-curated">
-                <h6>RabbitMQ the TypeScript wayRabbitMQ the TypeScript wayRabbitMQ the TypeScript way</h6>
+                <h6><Link to="single">RabbitMQ the TypeScript wayRabbitMQ the TypeScript wayRabbitMQ the TypeScript
+                    way</Link></h6>
                 <img src="https://picsum.photos/200/300" alt=""/>
             </div>
             <div className="bottom-info-short">
