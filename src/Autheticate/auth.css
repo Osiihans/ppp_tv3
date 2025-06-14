@@ -1,9 +1,13 @@
-
+.auth-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
 .flip-container {
     width: 100%;
     max-width: 28rem;
     perspective: 1000px;
-    margin: 10% auto 0;
 }
 
 .flipper {

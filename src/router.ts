@@ -13,6 +13,10 @@ import {SinglePost} from "./pages/SinglePost.tsx";
 import {AuthorPage} from "./pages/AuthorPage.tsx";
 import {AllAuthors} from "./pages/AllAuthors.tsx";
 import {ResetPage} from "./Autheticate/ResetPage.tsx";
+import {SearchPage} from "./pages/SearchPage.tsx";
+import {Categories} from "./pages/Categories.tsx";
+import {SettingsPage} from "./pages/SettingsPage.tsx";
+import {MessagesPage} from "./pages/MessagesPage.tsx";
 
 export const router = createBrowserRouter([
     {
@@ -86,6 +90,34 @@ export const router = createBrowserRouter([
                 path:":anyPath/authors",
                 Component:AllAuthors,
             },
+            {
+                path:"search",
+                Component:SearchPage
+            },
+            {
+                path:":any/search",
+                Component:SearchPage
+            },
+            {
+                path:"categories",
+                Component:Categories
+            },
+            {
+                path:":any/categories",
+                Component: Categories
+            },
+            {
+                path:"settings",
+                Component:SettingsPage
+            },
+            {
+                path:":any/settings",
+                Component:SettingsPage
+            },
+            {
+                path:"messages",
+                Component:MessagesPage
+            }
 
         ]
     },

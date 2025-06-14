@@ -16,6 +16,7 @@ export const Login = () => {
 
     return (
 
+        <div className="auth-container">
             <div className={`flip-container ${isFlipped ? 'flipped' : ''}`}>
                 <div className="flipper">
                     {/* Login Form (Front) */}
@@ -205,5 +206,8 @@ export const Login = () => {
                     </div>
                 </div>
             </div>
+        </div>
+
+
     )
 }
